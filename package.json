@@ -5,7 +5,7 @@
   "author": {
     "name": "G Wells",
     "email": "gwells4@cnm.edu",
-    "url": "https://bootcamp-coders.cnm.edu/~gwells/angular2-quickstart"
+    "url": "https://bootcamp-coders.cnm.edu/~gwells4/angular2-quickstart"
   },
   "scripts": {
     "build": "rimraf public_html/dist && tsc && webpack --config webpack/webpack.live.js --progress --profile --bail"

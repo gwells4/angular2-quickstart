@@ -7,6 +7,20 @@
 		<base href="<?php echo dirname($_SERVER["PHP_SELF"]) . "/"; ?>" />
 
 		<title>Angular 2 Quickstart</title>
+
+		<!--
+		The lines:
+
+			new HtmlWebpackPlugin({
+			inject: 'head',
+
+		in:
+
+			webpack.common.js
+
+		will insert "head" lines here.
+		-->
+
 	</head>
 	<body>
 		<quickstart-app>Loading&hellip;</quickstart-app>
