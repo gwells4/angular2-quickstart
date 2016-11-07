@@ -6,10 +6,10 @@ import {Component} from "@angular/core";
 	templateUrl: './templates/quickstart-app.php'
 })
 
-export class AppComponent {
-	navCollapse = true;
+export class AppComponent {      // class
+	navCollapse = true;           // state variable (property)
 
-	toggleCollapse() {
+	toggleCollapse() {            // method
 		this.navCollapse = !this.navCollapse;
 	}
 }
