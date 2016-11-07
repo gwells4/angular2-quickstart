@@ -2,8 +2,8 @@
 import {Component} from "@angular/core";
 
 @Component({
-	selector: 'diceware-app',
-	templateUrl: './templates/diceware-app.php'
+	selector: 'quickstart-app',
+	templateUrl: './templates/quickstart-app.php'
 })
 
 export class AppComponent {
