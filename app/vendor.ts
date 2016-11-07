@@ -13,3 +13,4 @@ import 'rxjs';
 // You can import js, ts, css, sass, ...
 import 'bootstrap-loader';
 import 'font-awesome-webpack';
+//angular-google-maps
