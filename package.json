@@ -1,18 +1,18 @@
 {
-  "name": "angular2-diceware",
+  "name": "angular2-quickstart",
   "version": "1.0.0",
   "license": "Apache-2.0",
   "author": {
-    "name": "Dylan McDonald",
-    "email": "dylan@deepdivedylan.com",
-    "url": "https://www.deepdivedylan.com/"
+    "name": "G Wells",
+    "email": "gwells4@cnm.edu",
+    "url": "https://bootcamp-coders.cnm.edu/~gwells/angular2-quickstart"
   },
   "scripts": {
     "build": "rimraf public_html/dist && tsc && webpack --config webpack/webpack.live.js --progress --profile --bail"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dylan-mcdonald/angular2-diceware.git"
+    "url": "https://github.com/gwells4/angular2-quickstart.git"
   },
   "dependencies": {
     "@angular/common": "~2.1.1",
