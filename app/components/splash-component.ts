@@ -1,47 +1,10 @@
-import {Component, OnInit} from "@angular/core";
-import {Router} from "@angular/router";
-import {Diceware} from "../classes/diceware";
-import {DicewareService} from "../services/diceware-service";
+import {Component} from "@angular/core";
+//import {Router} from "@angular/router";
 
 @Component({
-	templateUrl: "./templates/splash.php"
+	templateUrl: "./templates/splash.php"  // The single period is used to reference the root folder of the site.
 })
 
-export class SplashComponent implements OnInit {
-	dicewareRolls: Diceware[] = [];
-	dicewareRollsFiltered: Diceware[] = [];
-	dicewareRollSearch: string = null;
-	dicewareWordSearch: string = null;
+export class SplashComponent {
 
-	constructor(private dicewareService: DicewareService, private router: Router) {}
-
-	ngOnInit() : void {
-		this.dicewareService.getAllDiceware()
-			.subscribe(dicewareRolls => {
-				this.dicewareRolls = dicewareRolls;
-				this.dicewareRollsFiltered = dicewareRolls;
-			});
-	}
-
-	filterByRoll() : void {
-		if(this.dicewareRollSearch !== null) {
-			this.dicewareWordSearch = null;
-			this.dicewareRollsFiltered = this.dicewareRolls.filter((diceware: Diceware) => diceware.roll.indexOf(this.dicewareRollSearch) >= 0);
-		} else {
-			this.dicewareRollsFiltered = this.dicewareRolls;
-		}
-	}
-
-	filterByWord() : void {
-		if(this.dicewareWordSearch !== null) {
-			this.dicewareRollSearch = null;
-			this.dicewareRollsFiltered = this.dicewareRolls.filter((diceware: Diceware) => diceware.word.indexOf(this.dicewareWordSearch.toLowerCase()) >= 0);
-		} else {
-			this.dicewareRollsFiltered = this.dicewareRolls;
-		}
-	}
-
-	switchDiceware(diceware : Diceware) : void {
-		this.router.navigate(["/diceware/", diceware.roll]);
-	}
 }
